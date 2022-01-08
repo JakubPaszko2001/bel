@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.logo__pic {
+    width: 110px;
+    height: 110px;
+}
+.container {
+    display: flex;
+    margin: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.hamburger {
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    margin: 0;
+}
+.hamburger__menu  {
+    width: 35px;
+    height: 20px;
+    display: inline-block;
+    position: relative;}
+.hamburger__inner {
+    z-index: 999;
+
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.1s 0.2s ease-in-out;
+}
+.hamburger__inner::before,
+.hamburger__inner::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    transition: transform 0.2s 0.2s ease-in-out;
+
+}
+.hamburger__inner::before {
+    /* transform: translateY(-10px); */
+    top: -10px;
+}
+.hamburger__inner::after {
+    /* transform: translateY(10px); */
+    top: 10px;
+}
+.hamburger--active .hamburger__inner {
+    background-color: transparent;
+}
+.hamburger--active .hamburger__inner::before {
+    transform: translateY(10px) rotate(45deg);
+    background-color: #EB680D;
+}
+.hamburger--active .hamburger__inner::after {
+    transform: translateY(-10px) rotate(-45deg);
+    background-color: #EB680D;
+}
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 175px;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-200px);
+    transition: transform 0.3s 0.1s ease-in-out;
+    z-index: 100;
+}
+.navigation--active {
+    transform: translateX(0px);
+}
+.navigation__list {
+    list-style: none;
+}
+.navigation__item {
+    margin-bottom: 40px;
+}
+li:first-child {
+    margin-top: 150px;
+}
+a {
+    text-decoration: none;
+    color: #EB680D;
+    font-size: 20px;
+}
+.main__container {
+    position: relative;
+    z-index: 1;
+}
+.text {
+    position: absolute;
+    bottom: 20%;
+    left: 20px;
+    border: springgreen solid;
+    line-height: 20px;
+    /* font-size: clamp(20px,5em,50px); */
+    font-size: 5vw;
+    font-weight: 700;
+}
