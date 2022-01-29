@@ -202,8 +202,6 @@ a {
     position: relative;
     height: 225px;
     width: 125px;
-    /* height: 300px;
-    width: 175px; */
     background-color: var(--color-white);
     border-radius: 26px;
     margin-top: 10px;
@@ -235,14 +233,12 @@ a {
     font-weight: var(--ww-normal);
 }
 .card-text {
-    width: 100%;
+    width: 125px;
     height: 100px;
-    display: flex;
-    flex-wrap: nowrap;
     /* border: green solid; */
 }
 .h1-text {
     font-size: 0.5em;
     font-weight: var(--ww-normal);
-    padding: 0px 10px 10px 10px;
+    padding: 10px;
 }

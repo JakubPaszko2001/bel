@@ -177,7 +177,7 @@ a {
 }
 .cards--container {
     background: var(--color-brown);
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 .text-h2 {
@@ -186,7 +186,7 @@ a {
     text-align: center;
     letter-spacing: 0.5px;
     padding-bottom: 1.25em;
-    /* border: violet solid; */
+    border: violet solid;
 }
 .cards--container__main {
     display: flex;
@@ -202,11 +202,9 @@ a {
     position: relative;
     height: 225px;
     width: 125px;
-    /* height: 300px;
-    width: 175px; */
     background-color: var(--color-white);
     border-radius: 26px;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .card-img {
     display: flex;
@@ -225,8 +223,8 @@ a {
 .card-title {
     height: 50px;
     width: 100%;
-    margin-top: 5px;
     /* border: yellow solid; */
+    font-family: Arial, Helvetica, sans-serif;
 }
 .h1-title {
     display: flex;
@@ -235,14 +233,12 @@ a {
     font-weight: var(--ww-normal);
 }
 .card-text {
-    width: 100%;
+    width: 125px;
     height: 100px;
-    display: flex;
-    flex-wrap: nowrap;
     /* border: green solid; */
 }
 .h1-text {
     font-size: 0.5em;
     font-weight: var(--ww-normal);
-    padding: 0px 10px 10px 10px;
+    padding: 10px;
 }

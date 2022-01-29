@@ -200,10 +200,10 @@ a {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 225px;
-    width: 125px;
-    /* height: 300px;
-    width: 175px; */
+    /* height: 225px;
+    width: 125px; */
+    height: 300px;
+    width: 175px;
     background-color: var(--color-white);
     border-radius: 26px;
     margin-top: 10px;
@@ -235,10 +235,8 @@ a {
     font-weight: var(--ww-normal);
 }
 .card-text {
-    width: 100%;
+    width: 125px;
     height: 100px;
-    display: flex;
-    flex-wrap: nowrap;
     /* border: green solid; */
 }
 .h1-text {
