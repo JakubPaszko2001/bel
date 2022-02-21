@@ -252,9 +252,10 @@ a {
     height: 4em;
     background-color: var(--color-brown);
 }
-.realisation-text {
+.realisation {
+    background-color: var(--color-white);
     display: flex;
+    /* text-align: center; */
     justify-content: center;
-    align-items: center;
-    height: 10em;
+    height: 8em;
 }
