@@ -270,19 +270,3 @@ a {
     width: 400px;
     height: 200px;
 }
-.contact {
-    background-color: var(--color-brown);
-    display: flex;
-    flex-direction: column;
-    color: var(--color-white);
-}
-.contact-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact-text {
-    margin-left: 0.8em;
-    font-size: 0.5em;
-    font-weight: 100;
-}
