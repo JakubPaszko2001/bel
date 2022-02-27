@@ -282,7 +282,17 @@ a {
     align-items: center;
 }
 .contact-text {
-    margin-left: 0.8em;
+    margin: 2em;
     font-size: 0.5em;
     font-weight: 100;
+}
+.contact-style {
+    margin-bottom: 0.3em;
+}
+.contact-button {
+    width: 25%;
+    border: 20px;
+    background: white;
+    color: black;
+    padding: 10px;
 }
