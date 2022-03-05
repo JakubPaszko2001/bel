@@ -280,46 +280,21 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 0px;
 }
 .contact-text {
-    margin-left: var(--margin-left);
-    margin-right: var(--margin-left);
+    display: flex;
+    flex-direction: column;
+    margin: 0em 2em;
+    font-size: 0.5em;
+    font-weight: 100;
+    justify-items: center;
+    align-items: center;
+}
+.contact-style {
+    margin-bottom: 0.3em;
 }
 .contact-text-title {
-    font-size: 18px;
-    margin-bottom: -20px;
-    font-weight: var(--ww-bold);
-}
-input {
-    width: 100%;
-    padding: 6px;
-    background:none;
-    outline:none;
-    border:0;
-    border-bottom:2px solid white;
-    margin-bottom: 10px;
-}
-::placeholder {
-    color: black;
-}
-input:focus{
-    border-bottom:2px solid black;
-    transition:all .3s
-}
-button{
-    float:right;
-    padding:10px 30px;
-    margin:8px 0 0;
-    font-family:'Montserrat',sans-serif;
-    border-radius: 5px;
-    border:2px solid white;
-    background: 0;
-    color:white;
-    cursor:pointer;
-    transition:all .3s;
-}
-button:hover {
-    background-color: #383838;
-    border:2px solid #383838;
+    font-size: 20px;
+    margin-bottom: -10px;
+    left: 0;
 }

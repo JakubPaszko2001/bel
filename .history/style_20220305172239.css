@@ -280,7 +280,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 0px;
 }
 .contact-text {
     margin-left: var(--margin-left);
@@ -312,14 +311,9 @@ button{
     padding:10px 30px;
     margin:8px 0 0;
     font-family:'Montserrat',sans-serif;
-    border-radius: 5px;
     border:2px solid white;
     background: 0;
     color:white;
-    cursor:pointer;
-    transition:all .3s;
-}
-button:hover {
-    background-color: #383838;
-    border:2px solid #383838;
+    cursor:pointer
+    ;transition:all .3s
 }
