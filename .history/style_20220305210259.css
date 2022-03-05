@@ -331,9 +331,9 @@ button:hover {
 }
 .footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
+    justify-content: space-between;
+    text-align: center;
     margin-left: var(--margin-left);
     margin-right: var(--margin-left);
     border-top-right-radius: 8px;
@@ -345,12 +345,6 @@ button:hover {
     background-color: #383838;
 }
 .phone {
-    width: 30px;
-    height: 30px;
-}
-.footer-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 10px;
+    width: 10px;
+    height: 10px;
 }

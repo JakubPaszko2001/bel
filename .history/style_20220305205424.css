@@ -331,26 +331,11 @@ button:hover {
 }
 .footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
-    margin-left: var(--margin-left);
-    margin-right: var(--margin-left);
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
+    margin: 3px;
     bottom: 0;
     right: 0;
     left: 0;
-    height: 30px;
-    background-color: #383838;
-}
-.phone {
-    width: 30px;
-    height: 30px;
-}
-.footer-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 10px;
+    height: 40px;
+    background-color: black;
 }

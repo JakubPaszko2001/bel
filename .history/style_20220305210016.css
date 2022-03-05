@@ -331,9 +331,8 @@ button:hover {
 }
 .footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
+    justify-content: space-between;
     margin-left: var(--margin-left);
     margin-right: var(--margin-left);
     border-top-right-radius: 8px;
@@ -347,10 +346,4 @@ button:hover {
 .phone {
     width: 30px;
     height: 30px;
-}
-.footer-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 10px;
 }

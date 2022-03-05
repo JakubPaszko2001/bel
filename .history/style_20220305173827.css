@@ -269,18 +269,13 @@ a {
 .gallery-img {
     width: 330px;
     height: 200px;
-    /* border */
-    border: solid  10px var(--color-brown);
+    border: solid var(--color-brown);
 }
 .contact {
     background-color: var(--color-brown);
     display: flex;
     flex-direction: column;
     color: var(--color-white);
-    padding-bottom: 40px;
-}
-.h1-contanct {
-    border-bottom: 2px solid white;
 }
 .contact-title {
     display: flex;
@@ -310,7 +305,7 @@ input {
     color: black;
 }
 input:focus{
-    border-bottom:2px solid #383838;
+    border-bottom:2px solid black;
     transition:all .3s
 }
 button{
@@ -328,29 +323,4 @@ button{
 button:hover {
     background-color: #383838;
     border:2px solid #383838;
-}
-.footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    margin-left: var(--margin-left);
-    margin-right: var(--margin-left);
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 30px;
-    background-color: #383838;
-}
-.phone {
-    width: 30px;
-    height: 30px;
-}
-.footer-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 10px;
 }

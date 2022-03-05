@@ -331,7 +331,7 @@ button:hover {
 }
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: fixed;
     margin-left: var(--margin-left);
@@ -349,8 +349,6 @@ button:hover {
     height: 30px;
 }
 .footer-div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 10px;
+    position: flex;
+
 }
