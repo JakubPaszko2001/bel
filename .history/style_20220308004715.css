@@ -331,7 +331,7 @@ button:hover {
 }
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     margin-left: var(--margin-left);
@@ -350,12 +350,12 @@ button:hover {
 }
 .footer-div {
     display: flex;
+
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    font-size: 14px;
-    color: white;
-    /* margin: 0px 20px; */
+    font-size: 10px;
 }
 .zdj {
     width: 20px;
@@ -363,9 +363,6 @@ button:hover {
 }
 .div-telephone {
     display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.telefon .mail {
-    display: flex;
+    justify-content: center;
+    align-items: center;
 }

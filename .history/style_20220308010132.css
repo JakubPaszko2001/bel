@@ -353,9 +353,7 @@ button:hover {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    font-size: 14px;
-    color: white;
-    /* margin: 0px 20px; */
+    font-size: 16px;
 }
 .zdj {
     width: 20px;

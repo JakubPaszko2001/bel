@@ -331,7 +331,7 @@ button:hover {
 }
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     margin-left: var(--margin-left);
@@ -352,20 +352,9 @@ button:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    font-size: 14px;
-    color: white;
-    /* margin: 0px 20px; */
+    font-size: 10px;
 }
 .zdj {
     width: 20px;
     height: 20px;
-}
-.div-telephone {
-    display: flex;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.telefon .mail {
-    display: flex;
 }
