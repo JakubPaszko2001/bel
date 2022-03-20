@@ -1,16 +1,13 @@
 <?php
 include 'config.php';
-if(isset($_POST['submit'])) {
+if(isset($_POST['submit']) {
     $firstname = $_POST['imie'];
     $nazwisko = $_POST['nazwisko'];
     $opinia = $_POST['opinia'];
 
-    $wstaw = "INSERT INTO opinie_klienta VALUES (NULL,'$firstname','$nazwisko','$opinia')";
+    $wstaw = "INSERT INTO opinie_klienta VALUES (NULL,'$firstname','$nazwisko','$opinia')");
     $result = mysqli_query($conn, $wstaw);
-    if ($result) {
-        echo "<script>alert('Komentarz dodany.')</script>";
-    }
-}
+})
 ?>
 
 <!DOCTYPE html>
@@ -75,10 +72,7 @@ if(isset($_POST['submit'])) {
     </div>
     <!-- CARDS -->
     <div class="cards--container">
-        <div class="contact-title space">
-            <h1 class="h1-realisation" id="zajmujemy">Zajmujemy się</h1>
-        </div>
-        <!-- <h2 class="text-h2" id="zajmujemy">Zajmujemy się</h2> -->
+        <h2 class="text-h2" id="zajmujemy">Zajmujemy się</h2>
         <div class="cards--container__main">
             <div class="card">
                 <div class="card-img">
@@ -142,10 +136,10 @@ if(isset($_POST['submit'])) {
         <h1 class="realisation-h1" id="realizacje">Nasze Realizacje</h1>
     </div>
     <div class="gallery">
-        <a href="./images/docieplenie.webp" data-lightbox="mygallery"><img class="gallery-img" alt="docieplenie" src="./images/docieplenie.webp"></a>
-        <a href="./images/krycie.webp" data-lightbox="mygallery"><img class="gallery-img" alt="krycie" src="./images/krycie.webp"></a>
-        <a href="./images/surowe.webp" data-lightbox="mygallery"><img class="gallery-img" alt="surowe" src="./images/surowe.webp"></a>
-        <a href="./images/wiezby2.webp" data-lightbox="mygallery"><img class="gallery-img" alt="wiezby" src="./images/wiezby2.webp"></a>
+        <a href="./images/docieplenie.webp" data-lightbox="mygallery"><img class="gallery-img" src="./images/docieplenie.webp"></a>
+        <a href="./images/krycie.webp" data-lightbox="mygallery"><img class="gallery-img" src="./images/krycie.webp"></a>
+        <a href="./images/surowe.webp" data-lightbox="mygallery"><img class="gallery-img" src="./images/surowe.webp"></a>
+        <a href="./images/wiezby2.webp" data-lightbox="mygallery"><img class="gallery-img" src="./images/wiezby2.webp"></a>
     </div>
     <div class="contact">
         <div class="contact-title">
@@ -180,34 +174,19 @@ if(isset($_POST['submit'])) {
                 <button class="send-opinion" name="submit">Wystaw opinie</button>
             </form>
         </div>
-
-        <?php
-        $sql = 'SELECT * FROM opinie_klienta';
-        $result = mysqli_query($conn,$sql);
-        if (mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-        ?>
-
-
         <div class="comment">
             <div class="single-comment">
-                <h1 class="comment-h1"><?php echo $row['imie']; ?> <?php echo $row['nazwisko']; ?></h1>
-                <h2 class="comment-h2"><?php echo $row['opinia']; ?></h2>
+                <h1 class="comment-h1">Andrzej Kowalski</h1>
+                <h2 class="comment-h2">Super wykonanie, wszystko zadbane do końca.</h2>
             </div>
-            <!-- <div class="single-comment">
+            <div class="single-comment">
                 <h1 class="comment-h1">Andrzej Kowalski</h1>
                 <h2 class="comment-h2">Super wykonanie, wszystko zadbane do końca.</h2>
             </div>
             <div class="single-comment">
                 <h1 class="comment-h1">Andrzej Kowalski</h1>
                 <h2 class="comment-h2">Super wykonanie, wszystko zadbane do końca. Super wykonanie, wszystko zadbane do końca. Super wykonanie, wszystko zadbane do końca.</h2>
-            </div> -->
-
-            <?php
-                }
-            }
-            ?>
-
+            </div>
         </div>
     </div>
 </main>
@@ -215,11 +194,11 @@ if(isset($_POST['submit'])) {
     <div class="footer">
         <div class="footer-div">
             <div class="div-telephone">
-                <img src="./images/phone.webp" alt="phone" class="zdj">
+                <img src="./images/phone.webp" alt="" class="zdj">
             </div>
                 <div class="telefon">123 123 123</div>
                 <div class="div-telephone">
-                    <img src="./images/email.webp" alt="email" class="zdj">
+                    <img src="./images/email.webp" alt="" class="zdj">
                 </div>
             <div class="mail">jakisemail@wp.pl</div>
         </div>

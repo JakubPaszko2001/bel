@@ -86,11 +86,11 @@ img {
 }
 .hamburger--active .hamburger__inner::before {
     transform: translateY(10px) rotate(45deg);
-    background-color: var(--color-white);
+    background-color: var(--color-orange);
 }
 .hamburger--active .hamburger__inner::after {
     transform: translateY(-10px) rotate(-45deg);
-    background-color: var(--color-white);
+    background-color: var(--color-orange);
 }
 .navigation {
     position: absolute;
@@ -98,7 +98,7 @@ img {
     left: 0;
     width: 10.9375em;
     height: 100vh;
-    background-color: var(--color-brown);
+    background-color: var(--color-black);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,7 +120,7 @@ li:first-child {
 }
 a {
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--color-orange);
     font-size: var(--margin);
 }
 .main--container {
@@ -177,15 +177,17 @@ a {
 }
 .cards--container {
     background: var(--color-brown);
+    /* height: 100vh; */
 }
 
 .text-h2 {
     padding-top: 1em;
-    color: var(--color-white);
+    color: var(--color-black);
     text-align: center;
     letter-spacing: 0.5px;
     padding-bottom: 1.25em;
-;
+    border-bottom: 2px solid white;
+    /* border: violet solid; */
 }
 .cards--container__main {
     display: flex;
@@ -257,10 +259,6 @@ a {
     align-items: center;
     height: 10em;
 }
-.realisation-h1 {
-    color: #9c7d5d;
-    border-bottom: solid 2px #9c7d5d;
-}
 .gallery {
     display: flex;
     justify-content: center;
@@ -282,22 +280,7 @@ a {
     color: var(--color-white);
     padding-bottom: 40px;
 }
-.opinion {
-    background-color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
-}
 .h1-contanct {
-    border-bottom: 2px solid white;
-}
-.h1-opinion {
-    color: #9c7d5d;
-    border-bottom: 2px solid #9c7d5d;
-}
-.h1-realisation {
-    padding-top: 1em;
-    color: white;
     border-bottom: 2px solid white;
 }
 .contact-title {
@@ -306,16 +289,6 @@ a {
     align-items: center;
     margin: 30px 0px;
 }
-.space {
-    padding-bottom: 1em;
-}
-.realisation-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0px;
-}
-
 .contact-text {
     margin-left: var(--margin-left);
     margin-right: var(--margin-left);
@@ -323,13 +296,7 @@ a {
 .contact-text-title {
     font-size: 18px;
     margin-bottom: -20px;
-    font-weight: var(--ww-normal);
-}
-.opinon-text-title {
-    font-size: 18px;
-    margin-bottom: -20px;
-    font-weight: var(--ww-normal);
-    color: #9c7d5d;
+    font-weight: var(--ww-bold);
 }
 input {
     width: 100%;
@@ -337,14 +304,8 @@ input {
     background:none;
     outline:none;
     border:0;
-    margin-bottom: 10px;
-}
-.contact-input {
     border-bottom:2px solid white;
-}
-.opinion-input {
-    border:2px solid #9c7d5d;
-    padding: 10px;
+    margin-bottom: 10px;
 }
 ::placeholder {
     color: black;
@@ -359,21 +320,15 @@ button{
     margin:8px 0 0;
     font-family:'Montserrat',sans-serif;
     border-radius: 5px;
-    color:white;
+    border:2px solid white;
     background: 0;
+    color:white;
     cursor:pointer;
     transition:all .3s;
-}
-.send {
-    border:2px solid white;
 }
 .send:hover {
     background-color: #383838;
     border:2px solid #383838;
-}
-.send-opinion {
-    color: #9c7d5d;
-    border:2px solid #9c7d5d    ;
 }
 .footer {
     display: flex;
@@ -415,37 +370,9 @@ button{
 .telefon .mail {
     display: flex;
 }
-.comment-h1 {
-    font-size: 1rem;
-    color: white;
-    margin-left: 1em;
-    text-decoration: underline;
-    padding-top: 0.5em;
-    font-weight: var(--ww-normal);
+.opinion {
+    padding-bottom: 20vh;
 }
-.comment-h2 {
-    font-size: 1rem;
-    color: white;
-    margin-left: 1em;
-    padding-bottom: 0.5em;
-    font-weight: var(--ww-normal);
-}
-.single-comment {
-    margin-left: var(--margin-left);
-    margin-right: var(--margin-left);
-    background-color: var(--color-brown);
-    margin-top: 2em;
-    /* border: white solid 2px; */
-    border-radius: 15px 15px;
-    box-shadow: 0 5px 10px var(--color-brown);
-}
-
-@media (min-width: 520px) {
-    .photo {
-        height: 10.5em;
-    }
-    .gallery-img {
-        width: 380px;
-        height: 250px;
-    }
+.opinie-div {
+    font-size: 20px;
 }

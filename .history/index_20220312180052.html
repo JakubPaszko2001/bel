@@ -1,18 +1,3 @@
-<?php
-include 'config.php';
-if(isset($_POST['submit'])) {
-    $firstname = $_POST['imie'];
-    $nazwisko = $_POST['nazwisko'];
-    $opinia = $_POST['opinia'];
-
-    $wstaw = "INSERT INTO opinie_klienta VALUES (NULL,'$firstname','$nazwisko','$opinia')";
-    $result = mysqli_query($conn, $wstaw);
-    if ($result) {
-        echo "<script>alert('Komentarz dodany.')</script>";
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
@@ -24,7 +9,7 @@ if(isset($_POST['submit'])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./lightbox.min.css">
+    <link rel="stylesheet" href="lightbox.min.css">
     <script src="./js/lightbox-plus-jquery.min.js"></script>
 </head>
 <body>
@@ -39,7 +24,7 @@ if(isset($_POST['submit'])) {
         </button>
         <!-- LOGO -->
         <div class="header__logo">
-            <img class="logo__pic" src="./images/logo.webp" alt="logo">
+            <img class="logo__pic" src="./images/logo.png" alt="logo">
         </div>
     </div>
 </header>
@@ -48,16 +33,17 @@ if(isset($_POST['submit'])) {
     <!-- NAV -->
     <div class="navigation">
         <ul class="navigation--list">
-            <li class="navigation__item"><a href="#zajmujemy">Zajmujemy się</a></li>
-            <li class="navigation__item"><a href="#realizacje">Realizacje</a></li>
-            <li class="navigation__item"><a href="#kontakt">Kontakt</a></li>
-            <li class="navigation__item"><a href="#opinie">Opinie </a></li>
+            <li class="navigation__item"><a href="#">jeden</a></li>
+            <li class="navigation__item"><a href="#">dwa</a></li>
+            <li class="navigation__item"><a href="#">trzy</a></li>
+            <li class="navigation__item"><a href="#">cztery</a></li>
         </ul>
     </div>
     <!-- MAIN CONTAINER -->
     <div class="main--container">
         <div class="background__pic">
-            <img src="./images/tlo3.webp" alt="background">
+            <img src="./images/tlo1.png" alt="background">
+            <!-- <img src="./images/tlo1.png" alt="background"> -->
         </div>
     <!-- TEXT ON IMG -->
         <h1 class="text">ZBUDUJ Z NAMI <br>DOM <br> MARZEŃ</h1>
@@ -70,19 +56,16 @@ if(isset($_POST['submit'])) {
     </div>
     <!-- PHOTOS -->
     <div class="main--photos">
-        <img class="photo photo1" src="./images/docieplenie1.webp" alt="photo2">
-        <img class="photo photo2" src="./images/wiezby.webp" alt="photo1">
+        <img class="photo photo1" src="./images/docieplenie1.png" alt="photo2">
+        <img class="photo photo2" src="./images/wiezby.png" alt="photo1">
     </div>
     <!-- CARDS -->
     <div class="cards--container">
-        <div class="contact-title space">
-            <h1 class="h1-realisation" id="zajmujemy">Zajmujemy się</h1>
-        </div>
-        <!-- <h2 class="text-h2" id="zajmujemy">Zajmujemy się</h2> -->
+        <h2 class="text-h2">Zajmujemy się</h2>
         <div class="cards--container__main">
             <div class="card">
                 <div class="card-img">
-                    <img class="card-img_style" src="./images/wiezby2.webp" alt="wiezby">
+                    <img class="card-img_style" src="./images/wiezby2.png" alt="wiezby">
                 </div>
                 <div class="card-title">
                     <div class="h1-title">Wieźby<br>dachowe</div>
@@ -93,7 +76,7 @@ if(isset($_POST['submit'])) {
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img class="card-img_style" src="./images/krycie.webp" alt="wiezby">
+                    <img class="card-img_style" src="./images/krycie.png" alt="wiezby">
                 </div>
                 <div class="card-title">
                     <div class="h1-title">Krycie<br>dachów</div>
@@ -104,7 +87,7 @@ if(isset($_POST['submit'])) {
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img class="card-img_style" src="./images/docieplenie2.webp" alt="wiezby">
+                    <img class="card-img_style" src="./images/docieplenie2.png" alt="wiezby">
                 </div>
                 <div class="card-title">
                     <div class="h1-title">Docieplenia<br>budynków</div>
@@ -115,7 +98,7 @@ if(isset($_POST['submit'])) {
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img class="card-img_style" src="./images/wnetrza.webp" alt="wiezby">
+                    <img class="card-img_style" src="./images/wnetrza.png" alt="wiezby">
                 </div>
                 <div class="card-title">
                     <div class="h1-title">Wykańczanie<br>wnętrz</div>
@@ -126,7 +109,7 @@ if(isset($_POST['submit'])) {
             </div>
             <div class="card">
                 <div class="card-img">
-                    <img class="card-img_style" src="./images/surowe.webp" alt="wiezby">
+                    <img class="card-img_style" src="./images/surowe.png" alt="wiezby">
                 </div>
                 <div class="card-title">
                     <div class="h1-title">Stany<br>surowe</div>
@@ -139,75 +122,30 @@ if(isset($_POST['submit'])) {
     </div>
     <div class="brown"></div>
     <div class="realisation-text">
-        <h1 class="realisation-h1" id="realizacje">Nasze Realizacje</h1>
+        <h1 class="realisation-h1">Nasze Realizacje</h1>
     </div>
     <div class="gallery">
-        <a href="./images/docieplenie.webp" data-lightbox="mygallery"><img class="gallery-img" alt="docieplenie" src="./images/docieplenie.webp"></a>
-        <a href="./images/krycie.webp" data-lightbox="mygallery"><img class="gallery-img" alt="krycie" src="./images/krycie.webp"></a>
-        <a href="./images/surowe.webp" data-lightbox="mygallery"><img class="gallery-img" alt="surowe" src="./images/surowe.webp"></a>
-        <a href="./images/wiezby2.webp" data-lightbox="mygallery"><img class="gallery-img" alt="wiezby" src="./images/wiezby2.webp"></a>
+        <a href="./images/docieplenie.png" data-lightbox="mygallery"><img class="gallery-img" src="./images/nazwa.png"></a>
+        <a href="./images/krycie.png" data-lightbox="mygallery"><img class="gallery-img" src="./images/krycie.png"></a>
+        <a href="./images/surowe.png" data-lightbox="mygallery"><img class="gallery-img" src="./images/surowe.png"></a>
+        <a href="./images/wiezby2.png" data-lightbox="mygallery"><img class="gallery-img" src="./images/wiezby2.png"></a>
     </div>
     <div class="contact">
         <div class="contact-title">
-            <h1 class="h1-contanct" id="kontakt">Kontakt</h1>
+            <h1 class="h1-contanct">Kontakt</h1>
         </div>
         <div class="contact-text">
             <p class="contact-text-title">Imię:</p><br>
-            <input class="contact-input" placeholder="Wpisz imię..."></input>
+            <input placeholder="Wpisz imię..."></input>
             <p class="contact-text-title">Nazwisko:</p><br>
-            <input class="contact-input" placeholder="Wpisz nazwisko..."></input>
+            <input placeholder="Wpisz nazwisko..."></input>
             <p class="contact-text-title">Numer tel.:</p><br>
-            <input class="contact-input" placeholder="Wpisz Numer tel..."></input>
+            <input placeholder="Wpisz Numer tel..."></input>
             <p class="contact-text-title">Email:</p><br>
-            <input class="contact-input" placeholder="Wpisz Email..."></input>
+            <input placeholder="Wpisz Email..."></input>
             <p class="contact-text-title">Wiadomość:</p><br>
-            <input class="contact-input" placeholder="Wpisz Wiadomość..."></input>
-            <button class="send">Wyślij</button>
-        </div>
-    </div>
-    <div class="opinion">
-        <div class="contact-title">
-            <h1 class="h1-opinion" id="opinie">Wystaw opinie</h1>
-        </div>
-        <div class="contact-text">
-            <form action="" method="post" class="form">
-                <p class="opinon-text-title">Imię:</p><br>
-                <input class="opinion-input" name="imie" placeholder="Wpisz imię..."></input>
-                <p class="opinon-text-title" >Nazwisko:</p><br>
-                <input class="opinion-input" name="nazwisko" placeholder="Wpisz nazwisko..."></input>
-                <p class="opinon-text-title">Opinia:</p><br>
-                <input class="opinion-input" name="opinia" placeholder="Wpisz opinie..."></input>
-                <button class="send-opinion" name="submit">Wystaw opinie</button>
-            </form>
-        </div>
-
-        <?php
-        $sql = 'SELECT * FROM opinie_klienta';
-        $result = mysqli_query($conn,$sql);
-        if (mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-        ?>
-
-
-        <div class="comment">
-            <div class="single-comment">
-                <h1 class="comment-h1"><?php echo $row['imie']; ?> <?php echo $row['nazwisko']; ?></h1>
-                <h2 class="comment-h2"><?php echo $row['opinia']; ?></h2>
-            </div>
-            <!-- <div class="single-comment">
-                <h1 class="comment-h1">Andrzej Kowalski</h1>
-                <h2 class="comment-h2">Super wykonanie, wszystko zadbane do końca.</h2>
-            </div>
-            <div class="single-comment">
-                <h1 class="comment-h1">Andrzej Kowalski</h1>
-                <h2 class="comment-h2">Super wykonanie, wszystko zadbane do końca. Super wykonanie, wszystko zadbane do końca. Super wykonanie, wszystko zadbane do końca.</h2>
-            </div> -->
-
-            <?php
-                }
-            }
-            ?>
-
+            <input placeholder="Wpisz Wiadomość..."></input>
+            <button>Wyślij</button>
         </div>
     </div>
 </main>
@@ -215,11 +153,11 @@ if(isset($_POST['submit'])) {
     <div class="footer">
         <div class="footer-div">
             <div class="div-telephone">
-                <img src="./images/phone.webp" alt="phone" class="zdj">
+                <img src="./images/phone.png" alt="" class="zdj">
             </div>
                 <div class="telefon">123 123 123</div>
                 <div class="div-telephone">
-                    <img src="./images/email.webp" alt="email" class="zdj">
+                    <img src="./images/email.png" alt="" class="zdj">
                 </div>
             <div class="mail">jakisemail@wp.pl</div>
         </div>

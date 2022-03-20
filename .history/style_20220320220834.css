@@ -439,13 +439,3 @@ button{
     border-radius: 15px 15px;
     box-shadow: 0 5px 10px var(--color-brown);
 }
-
-@media (min-width: 520px) {
-    .photo {
-        height: 10.5em;
-    }
-    .gallery-img {
-        width: 380px;
-        height: 250px;
-    }
-}

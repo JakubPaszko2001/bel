@@ -241,7 +241,7 @@ a {
     /* border: green solid; */
 }
 .h1-text {
-    font-size: 0.45em;
+    font-size: 0.50em;
     font-weight: var(--ww-normal);
     padding: 0px 10px 10px 10px;
 }
@@ -443,9 +443,5 @@ button{
 @media (min-width: 520px) {
     .photo {
         height: 10.5em;
-    }
-    .gallery-img {
-        width: 380px;
-        height: 250px;
     }
 }
